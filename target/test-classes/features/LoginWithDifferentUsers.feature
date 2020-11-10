@@ -1,4 +1,4 @@
-@different_users
+@different_users @smoke
 Feature: User account tests
   As a user, I should be able to login with different users using their correct emails and passwords.
   when I login, I should be able to see username in the account username section.

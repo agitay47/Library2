@@ -1,4 +1,4 @@
-@Books
+@Books @smoke
 Feature:Librarin should be able to login with valid credentials
 
   Background: Common Steps

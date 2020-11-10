@@ -3,6 +3,532 @@
     "line": 2,
     "elements": [
       {
+        "line": 4,
+        "name": "Common Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4031000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1374000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "librarian enter \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.librarian_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T05:58:00.014Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7900000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Add a new book as a Librarian",
+        "description": "",
+        "id": "librarin-should-be-able-to-login-with-valid-credentials;add-a-new-book-as-a-librarian;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6074000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1696000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on the \"Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.click_on_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 784000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on \"Add Book\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Book\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.click_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 815000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "add \u0027Leylan\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Leylan\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.add(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 382000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "include \u00271111\u0027 number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u00271111\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.unclude_number(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "put the \u00272020\u0027 came out",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u00272020\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.put_the_came_out(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 578000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "add \u0027Selahattin Demirtas\u0027 name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Selahattin Demirtas\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "choose \"Drama\" as a book category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Drama\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.choose_as_a_book_category(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 474000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "add \u0027Freedom for Selo Baskan\u0027 for Leylan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Freedom for Selo Baskan\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.add_for_leylan(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click to \"Save Changes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save Changes\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Books"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Add_book"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Common Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3581000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1405000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "librarian enter \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.librarian_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T05:58:25.225Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5996000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Edit a book as a Librarian",
+        "description": "",
+        "id": "librarin-should-be-able-to-login-with-valid-credentials;edit-a-book-as-a-librarian;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5833000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1094000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click on the \"Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.click_on_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 829000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on the \"Edit Book\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Edit Book\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.click_on_the_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1016000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "add \u0027Siya Evînê Shadow of Love\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Siya Evînê Shadow of Love\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.add(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "include \u00270001\u0027 number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u00270001\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.unclude_number(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 453000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "put the \u00271989\u0027 came out",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u00271989\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.put_the_came_out(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 285000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "add \u0027Mehmed Uzun\u0027 name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Mehmed Uzun\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "choose \"Drama\" as a book category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Drama\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.choose_as_a_book_category(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "add \u0027Live for love\u0027 for Leylan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Live for love\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddBook_StepDefinitions.add_for_leylan(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user click to \"Save Changes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save Changes\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Books"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Edit_book"
+          }
+        ]
+      }
+    ],
+    "name": "Librarin should be able to login with valid credentials",
+    "description": "",
+    "id": "librarin-should-be-able-to-login-with-valid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddBook.feature",
+    "tags": [
+      {
+        "name": "@Books",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
         "line": 5,
         "name": "Common Steps",
         "description": "",
@@ -11,7 +537,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1386000000,
+              "duration": 2485000000,
               "status": "passed"
             },
             "line": 6,
@@ -23,10 +549,654 @@
           },
           {
             "result": {
-              "duration": 787000000,
+              "duration": 758000000,
               "status": "passed"
             },
             "line": 7,
+            "name": "librarian enter \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.librarian_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 721000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on \"Users\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 647000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user choose group as a \"Librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_choose_group_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T05:58:46.656Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5551000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Librarian should be able to edit user with a new user",
+        "description": "",
+        "id": "edit-user;librarian-should-be-able-to-edit-user-with-a-new-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5859000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on \"Edit User\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Edit User\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_on(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 911000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user add new \u0027Agit AY\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Agit AY\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_add_new(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 255000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user add a new \u002712345\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u002712345\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_add_a_new(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 279000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user change \u0027aa@gmail.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027aa@gmail.com\u0027",
+                  "offset": 12
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_change(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 148000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user choose group as \"Librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_choose_group_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 249000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user adding a new \u0027Los Angeles\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Los Angeles\u0027",
+                  "offset": 18
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_adding_a_new(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click to \"Save Changes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save Changes\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Users"
+          },
+          {
+            "name": "@Edit_user"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Common Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1506000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 730000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "librarian enter \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.librarian_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 745000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on \"Users\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 705000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user choose group as a \"Librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_choose_group_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T05:59:04.911Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5525000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Add a new Librarian",
+        "description": "",
+        "id": "edit-user;add-a-new-librarian;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5865000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should be able to click on \"Add User\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add User\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_should_be_able_to_click_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 963000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user add new \u0027Egid Merdini\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Egid Merdini\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_add_new(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user add a new \u0027474747\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027474747\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_add_a_new(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 267000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user change \u0027kurdish@gmail.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027kurdish@gmail.com\u0027",
+                  "offset": 12
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_change(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user choose group as \"Librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_choose_group_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 266000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user adding a new \u0027Mardin\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Mardin\u0027",
+                  "offset": 18
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_adding_a_new(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 155000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user click to \"Save Changes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save Changes\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.UserEdit_StepDefinitions.user_click_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Users"
+          },
+          {
+            "name": "@AddUser"
+          }
+        ]
+      }
+    ],
+    "name": "Edit User",
+    "description": "",
+    "id": "edit-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EditUser.feature",
+    "tags": [
+      {
+        "name": "@Users",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Common Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1357000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T05:59:22.203Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5435000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Login as a librarian",
+        "description": "",
+        "id": "login-feature;login-as-a-librarian",
+        "after": [
+          {
+            "result": {
+              "duration": 5883000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 677000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "librarian enter \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.librarian_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 539000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "dashboard should be displayed",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.dashboard_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@librarian"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Common Steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1572000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T05:59:36.109Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5403000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login as a student",
+        "description": "",
+        "id": "login-feature;login-as-a-student",
+        "after": [
+          {
+            "result": {
+              "duration": 6448000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 716000000,
+              "status": "passed"
+            },
+            "line": 14,
             "name": "student enter \"username\" and \"password\"",
             "match": {
               "arguments": [
@@ -42,15 +1212,66 @@
               "location": "com.cybertek.step_definitions.Login_StepDefinitions.student_enter_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 633000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "books should be displayed",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.books_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@student"
           }
         ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
       },
       {
-        "start_timestamp": "2020-11-10T02:53:06.242Z",
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-10T05:59:50.912Z",
         "before": [
           {
             "result": {
-              "duration": 6456000000,
+              "duration": 5408000000,
               "status": "passed"
             },
             "match": {
@@ -58,14 +1279,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Return Success Message Verification",
+        "line": 15,
+        "name": "Verify user information student27@library",
         "description": "",
-        "id": "return-book;return-success-message-verification",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;2",
         "after": [
           {
             "result": {
-              "duration": 5974000000,
+              "duration": 5816000000,
               "status": "passed"
             },
             "match": {
@@ -74,68 +1295,727 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 728000000,
+              "duration": 1498000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user navigate to Borrowing Books module",
+            "line": 8,
+            "name": "I am on the login page",
             "match": {
-              "location": "com.cybertek.step_definitions.BarrowingBook_StepDefinitions.user_navigate_to_borrowing_books_module()"
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 486000000,
+              "duration": 721000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user click on return book button",
+            "line": 9,
+            "name": "I login using \"student27@library\" and \"kkMksO2i\"",
             "match": {
-              "location": "com.cybertek.step_definitions.BarrowingBook_StepDefinitions.user_click_on_return_book_button()"
+              "arguments": [
+                {
+                  "val": "\"student27@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"kkMksO2i\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "org.junit.ComparisonFailure: Message is not matching expected:\u003c[The book has been returned..]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat com.cybertek.pages.BooksPage.verifyMessage(BooksPage.java:110)\r\n\tat com.cybertek.step_definitions.BarrowingBook_StepDefinitions.user_should_see_success_message(BarrowingBook_StepDefinitions.java:23)\r\n\tat ✽.user should see success message(file:///C:/Users/47agi/IdeaProjects/Library/src/test/resources/features/BarrowBookAsAStudent.feature:13)\r\n",
-              "duration": 178000000,
-              "status": "failed"
-            },
-            "line": 13,
-            "name": "user should see success message",
-            "match": {
-              "location": "com.cybertek.step_definitions.BarrowingBook_StepDefinitions.user_should_see_success_message()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@R_B"
+            "name": "@different_users"
           },
           {
-            "name": "@return_book"
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@students"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:00:04.386Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5438000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify user information student28@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5835000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1400000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 730000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"student28@library\" and \"19Ceq2sT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student28@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"19Ceq2sT\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@students"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:00:17.821Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5403000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify user information student29@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5798000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1455000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 708000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"student29@library\" and \"WyIUNpDI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student29@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"WyIUNpDI\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@students"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:00:31.205Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5424000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify user information student30@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5805000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1388000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 731000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"student30@library\" and \"IaT9YI0I\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student30@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"IaT9YI0I\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@students"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:00:44.564Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5413000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify user information librarian13@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5829000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1501000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 737000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"librarian13@library\" and \"9rf6axdD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian13@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"9rf6axdD\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@librarians"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:00:58.052Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5404000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify user information librarian14@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5829000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1399000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 692000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"librarian14@library\" and \"87x8afWY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian14@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"87x8afWY\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@librarians"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:01:11.384Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5431000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify user information librarian15@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5784000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1978000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 693000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"librarian15@library\" and \"S5Ejblg1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian15@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"S5Ejblg1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@librarians"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:01:25.280Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5460000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify user information librarian16@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5800000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1660000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 692000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"librarian16@library\" and \"8BzUhhaU\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian16@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"8BzUhhaU\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@librarians"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T06:01:38.904Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5570000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify user information librarian17@library",
+        "description": "",
+        "id": "user-account-tests;verify-user-information-\u003cemail\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 5923000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2940000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1165000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I login using \"librarian17@library\" and \"tXqOoIOS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian17@library\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"tXqOoIOS\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.i_login_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@different_users"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@all_accounts"
+          },
+          {
+            "name": "@librarians"
           }
         ]
       }
     ],
-    "name": "Return book",
-    "description": "  As a student user, I should be able to return books by clicking on return book button under the Borrowing Books module.",
-    "id": "return-book",
+    "name": "User account tests",
+    "description": "  As a user, I should be able to login with different users using their correct emails and passwords.\n  when I login, I should be able to see username in the account username section.",
+    "id": "user-account-tests",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BarrowBookAsAStudent.feature",
+    "uri": "file:src/test/resources/features/LoginWithDifferentUsers.feature",
     "tags": [
       {
-        "name": "@R_B",
+        "name": "@different_users",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 18
         }
       }
     ]
