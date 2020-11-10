@@ -24,10 +24,12 @@ public class LoginPage extends BasePage{
 
 
     public void createUsername(String string) {
+        usernameInput.clear();
         BrowserUtils.enterText(usernameInput, ConfigurationReader.getProperty("LibrarianUsername"));
     }
 
     public void createPassword(String string) {
+        passwordInput.clear();
         BrowserUtils.enterText(passwordInput, ConfigurationReader.getProperty("LibrarianPassword"));
     }
 
