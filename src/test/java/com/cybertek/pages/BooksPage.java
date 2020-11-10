@@ -64,6 +64,7 @@ public class BooksPage extends BasePage {
     }
 
     public void addBookName(String string) {
+        bookName.clear();
         BrowserUtils.enterText(bookName, string);
     }
 
@@ -72,10 +73,12 @@ public class BooksPage extends BasePage {
     }
 
     public void addYear(String string) {
+        year.clear();
         BrowserUtils.enterText(year, string);
     }
 
     public void addAuthor(String string) {
+        author.clear();
         BrowserUtils.enterText(author, string);
     }
 
@@ -84,6 +87,7 @@ public class BooksPage extends BasePage {
     }
 
     public void createDescription(String string) {
+        description.clear();
         BrowserUtils.enterText(description, string);
     }
 
