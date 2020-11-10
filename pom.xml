@@ -27,12 +27,12 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/*Runner*.java</include>
+                        <include>**/*CukesRunner.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <!--                    <runOrder>alphabetical</runOrder>-->
-                    <!--                    <parallel>methods</parallel>-->
-                    <threadCount>3</threadCount>
+                    <runOrder>alphabetical</runOrder>
+                    <parallel>methods</parallel>
+                    <threadCount>4</threadCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <forkCount>2C</forkCount>
                 </configuration>
