@@ -2,6 +2,8 @@ package com.cybertek.pages;
 
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -39,6 +41,15 @@ public class BooksPage extends BasePage {
 
     @FindBy(id = "description")
     private WebElement description;
+
+    @FindBy(xpath = "//span[.='Borrowing Books']")
+    private WebElement borrowingBook;
+
+    @FindBy(xpath = "(//*[@id='borrowed_list']//td[1])[14]")
+    private WebElement returnBook;
+
+    @FindBy(xpath = "//div[@id='toast-container']//div[@class='toast-message']")
+    private WebElement message;
 
     public void clickOnBooks(String string) {
         BrowserUtils.clickOnElement(books);
@@ -81,6 +92,23 @@ public class BooksPage extends BasePage {
 //        select.selectByVisibleText("Drama");
 //
 //    }
+
+    public void clickOnBorrowingBook() {
+
+        BrowserUtils.clickOnElement(borrowingBook);
+    }
+
+    public void clickOnReturnBook() {
+
+        BrowserUtils.clickOnElement(returnBook);
+    }
+
+    public void verifyMessage() {
+        String expected = "The book has been returned..";
+        String actual = Driver.getDriver().findElement(By.xpath("(//*[.='The book has been returned..'])[1]")).getText();
+        BrowserUtils.waitForVisibility(By.xpath("//div[@class='toast toast-success']"), 20);
+        Assert.assertEquals("Message is not matching", expected, actual);
+    }
 
 
 }
