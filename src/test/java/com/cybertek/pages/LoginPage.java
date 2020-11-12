@@ -3,11 +3,12 @@ package com.cybertek.pages;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
 
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -21,6 +22,9 @@ public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//button[.='Sign in']")
     private WebElement signInButton;
+
+    @FindBy(xpath = "//div[.='Sorry, Wrong Email or Password']")
+    private WebElement negativeMessage;
 
 
     public void createUsername(String string) {
@@ -37,15 +41,20 @@ public class LoginPage extends BasePage{
         BrowserUtils.clickOnElement(signInButton);
     }
 
-    public void studentUsername(String string){
-        BrowserUtils.enterText(usernameInput,ConfigurationReader.getProperty("StudentUsername"));
+    public void studentUsername(String string) {
+        BrowserUtils.enterText(usernameInput, ConfigurationReader.getProperty("StudentUsername"));
     }
 
-    public void studentPassword(String string){
-        BrowserUtils.enterText(passwordInput,ConfigurationReader.getProperty("StudentPassword"));
+    public void studentPassword(String string) {
+        BrowserUtils.enterText(passwordInput, ConfigurationReader.getProperty("StudentPassword"));
     }
 
+    public void negativeMessageDisplayed(String string) {
+        String expected = "Sorry, Wrong Email or Password";
+        String actual = negativeMessage.getText();
 
+        Assert.assertEquals(expected, actual);
+    }
 
 
 }

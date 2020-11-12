@@ -110,7 +110,9 @@ public class BooksPage extends BasePage {
     public void verifyMessage() {
         String expected = "The book has been returned..";
         String actual = Driver.getDriver().findElement(By.xpath("(//*[.='The book has been returned..'])[1]")).getText();
+
         BrowserUtils.waitForVisibility(By.xpath("//div[@class='toast toast-success']"), 20);
+
         Assert.assertEquals("Message is not matching", expected, actual);
     }
 
