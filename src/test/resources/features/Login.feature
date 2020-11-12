@@ -1,4 +1,4 @@
-@smoke
+@login @smoke
 Feature: Login feature
 
   Background: Common Steps
