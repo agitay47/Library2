@@ -19,7 +19,7 @@ Feature: User account tests
 
     @librarians
     Examples:
-      | email | password |
+      | email               | password |
       | librarian13@library | 9rf6axdD |
       | librarian14@library | 87x8afWY |
       | librarian15@library | S5Ejblg1 |

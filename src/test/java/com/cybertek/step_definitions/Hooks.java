@@ -41,4 +41,6 @@ public class Hooks {
 
         Driver.closeDriver();
         System.out.println(":::(^_^) End of test execution (*_*):::");
-    }}
+    }
+
+}

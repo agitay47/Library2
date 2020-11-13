@@ -1,16 +1,12 @@
 package com.cybertek.pages;
 
 import com.cybertek.utilities.BrowserUtils;
-import com.cybertek.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class UserPage extends BasePage {
 
-    public UserPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+
 
     @FindBy(xpath = "//span[.='Users']")
     private WebElement users;
