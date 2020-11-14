@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
 //                "junit:target/JUnitReports/report.xml",
 //                "html:target/HtmlReports",
                 "rerun:target/rerun.txt",
-               // "html:target/cucumber-report.html",
-                "json:target/cucumber.json",
+                "html:target/cucumber-report.html",
+                "json:target/cucumber1.json",
                 "timeline:target/timeline-report"
 
         },
